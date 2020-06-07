@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="xw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!-- 以上代码告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>大型仪器设备预约管理系统</title>
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <script type="text/javascript" src="/static/script/jquery-3.1.1.min_1.js"></script>
+    <link rel="stylesheet" href="/static/layui/css/layui.css">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <script src="/static/layui/layui.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/script/index.js"></script>
+    <script src="/static/script/login.js"></script>
+</head>
+<body style="background: #F0F0F4">
+<!--[if lte IE8]>
+<p class="browserupdate">您的浏览器版本太老，请到<a href="http://browsehappy.com">这里</a>更新，以获取最佳的浏览体验。</p>
+<![endif]-->
+<header>
+    <div class="logo">
+        <a href="/index"><img src="/static/images/logo.png" alt="大型仪器设备预约管理系统logo" class="logo-img vertical-center"></a>
+##        <h1 class="vertical-center">分析测试中心预约系统</h1>
+    </div>
+    <div class="logoff">
+        <a href="/index/login" id="lg"><em class="username">登录</em></a>
+        <a href="/index/login" id="logout"><img src="/static/images/out.png" alt="注销登录"></a>
+    </div>
+</header><!-- header结束 -->
+<!--中间部分-->
+<div class="layui-carousel" id="banner" style="left: 21%;">
+    <div carousel-item>
+        <div>
+            <img src="/static/images/banner1.png" alt="">
+        </div>
+        <div>
+            <img src="/static/images/sy2.jpg" alt="">
+        </div>
+        <div>
+            <img src="/static/images/banner1.png" alt="">
+        </div>
+        <div>
+            <img src="/static/images/sy2.jpg" alt="">
+        </div>
+        <div>
+            <img src="/static/images/banner1.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-top: 40px;">
+    <div class="row">
+        <table style="position:relative;border-radius: 8px;border:1px solid #ccc;width: 93.8%;height: 30px;margin-left: 2.7%;">
+            <tr>
+                <td colspan="3" style="height: 80px;width: 150px;text-align: center;border: 1px solid #ccc;font-size: 22px;">多功能X射线衍射仪</td>
+            </tr>
+            <tr>
+                <td rowspan="4" style="height: 30px;width:20%;text-align:center;border: 1px solid #ccc">
+                    <img src="/static/images/x.gif" width="400"height="250" style="padding: 10px;">
+                </td>
+                <td style="height: 30px;width: 20%;text-align: center;border: 1px solid #ccc">仪器名称</td>
+                <td style="height: 30px;width: 60%;text-align: center;border: 1px solid #ccc">多功能X射线衍射仪</td>
+            </tr>
+            <tr>
+                <td style="height: 30px;width: 20%;text-align: center;border: 1px solid #ccc">仪器型号</td>
+                <td style="height: 30px;width: 60%;text-align: center;border: 1px solid #ccc">Ultima Ⅳ</td>
+            </tr>
+            <tr>
+                <td style="height: 30px;width: 20%;text-align: center;border: 1px solid #ccc">制造厂商</td>
+                <td style="height: 30px;width: 60%;text-align: center;border: 1px solid #ccc">日本理学电机株式会社</td>
+            </tr>
+            <tr>
+                <td style="height: 30px;width: 20%;text-align: center;border: 1px solid #ccc">放置地址</td>
+                <td style="height: 30px;width: 60%;text-align: center;border: 1px solid #ccc">采矿楼一楼X-射线衍射仪室</td>
+            </tr>
+            <tr>
+                <td style="height: 50px;width: 20%;text-align: center;border: 1px solid #ccc">预约联系人</td>
+                <td colspan="2"style="height: 30px;width: 80%;text-align: center;border: 1px solid #ccc">仪器专管员：舒群威 联系电话:18785743601</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 50px;width: 150px;text-align: center;border: 1px solid #ccc">主要技术指标</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 30px;width: 80%;text-align: center;border: 1px solid #ccc;padding: 10px;">
+                    <p style="margin-left: 0">输出功率不小于3 kW；</p>
+                    <p>1 . X射线光管：Cu靶X射线光管;</p>
+                    <p style="margin-left: -13%;">2 . 测角仪</p>
+                        <p style="margin-left: 15%;">2.1 扫描方式：Theta / Theta测角仪，立式测角仪。</p>
+                        <p style="margin-left: 5px;">2.2 转动范围：-3°~168°。</p>
+                        <p style="margin-left: 13%;">2.3 最小步长：0.0001°，角度重现性：0.0001°。</p>
+                    <p style="margin-left: -12%;">3 . 光学通路</p>
+                    <p style="margin-left: -13.5%;">4 . 探测器</p>
+                    <p style="margin-left: -5%;">最低0.3度起测.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 50px;width: 150px;text-align: center;border: 1px solid #ccc">仪器功能及主要附件</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 30px;width: 80%;text-align: center;border: 1px solid #ccc;padding: 10px;">
+                    <p style="margin-left: 15%">该仪器能够精确地对金属和非金属多晶粉末样品进行物相检索分析、物相定量分析、材料的线、面扫描定性分析、基本参数法线形分析、晶胞参数计算和固溶体分析、薄膜材料物相分析以及宏观应力或微观应力的测定。</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 50px;width: 150px;text-align: center;border: 1px solid #ccc">应用范围</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 30px;width: 80%;text-align: center;border: 1px solid #ccc;padding: 10px;">
+                    <p style="margin-left: 0">该仪器在材料科学、冶金、矿物、药物、物理学、化学、化工、塑料、建材、陶瓷以及考古、刑侦、商检等众多学科、相关工业、行业中都有重要的应用，是理工科院校、科研部门及厂矿的重要大型分析设备。</p>
+                </td>
+            </tr>
+        </table>
+        <a href="/index"><button type="button">返回首页</button></a>
+        <a href="/index/order"><button type="button" style="float: right;margin-right: 3%;">立即预约</button></a>
+    </div>
+</div><!--中间部分结束-->
+<!--底部-->
+<div class="container-fluid" style="border-top: 1px solid #00B7EE;">
+    <div class="row" style="text-align: center;">
+        <p style="height: 20px;padding-top: 45px;margin-bottom:70px;">@</p>
+    </div>
+</div>
+<!--底部结束-->
+<script>
+    layui.use('carousel', function(){
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#banner'
+            ,width: '57.6%' //设置容器宽度
+            ,height: '330px'
+            ,arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>
+</body>
+</html>

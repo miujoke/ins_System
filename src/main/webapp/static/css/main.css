@@ -1,0 +1,212 @@
+/****主页内容container样式****/
+.container{
+	position: relative;
+	margin:20px auto 100px;
+}
+
+.container section{
+	position: absolute;
+}
+
+.container section span,
+.container section h3,
+.container section p{
+	font-size:1.7rem;
+	color:#fff;
+}
+
+.container section:nth-child(1),
+.container section:nth-child(2),
+.container section:nth-child(3),
+.container section:nth-child(4),
+.container section:nth-child(5),
+.container section:nth-child(6),
+.container section:nth-child(7){
+	height: 330px;
+}
+
+.container section:nth-child(1) img,
+.container section:nth-child(2) img,
+.container section:nth-child(4) img{
+	top:90px;
+}
+
+.container section:nth-child(2) a,
+.container section:nth-child(4) a{
+	height:330px;
+}
+
+.container section:nth-child(3) .box a{
+	height:150px;
+}
+
+.container section:nth-child(5) a,
+.container section:nth-child(6) a,
+.container section:nth-child(7) a{
+	height:190px;
+}
+
+.container .box{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow:2px 2px 5px #444;
+	-moz-box-shadow:2px 2px 5px #444;
+	-o-box-shadow:2px 2px 5px #444;
+	box-shadow:2px 2px 5px #444;
+	-webkit-transition: box-shadow,.2s;
+	-moz-transition: box-shadow,.2s;
+	-o-transition: box-shadow,.2s;
+	transition: box-shadow,.2s;
+}
+
+.container .box:hover{
+	-webkit-box-shadow: -2px -2px 5px #444,2px 2px 5px #444;
+	-moz-box-shadow: -2px -2px 5px #444,2px 2px 5px #444;
+	-o-box-shadow: -2px -2px 5px #444,2px 2px 5px #444;
+	box-shadow: -2px -2px 5px #444,2px 2px 5px #444;
+}
+
+.container .box a{
+	display: inline-block;
+}
+
+.container section img{
+	width:70px;
+}
+
+  /**个人信息person-info样式**/
+  .person-info{
+  	width:300px;
+  	background: rgba(109,186,240,1);
+  	top:0;
+  	left:0;
+  }
+  .person-info div{
+  	width:180px;
+  	position: absolute;
+  	top:180px;
+  }
+  .person-info span{
+  	display: block;
+  	margin-bottom:5px;
+  }
+
+   /**座位预约seat-select样式**/
+   .seat-select{
+	   width: 200px;
+	   background: rgba(63,188,216,1);
+	   top:-351px;
+   }
+   .seat-select span{
+   	position: absolute;
+   	top:180px;
+   }
+   .seat-select a{
+   	width:200px;
+   }
+
+   /**公告栏notice-board样式**/
+	#banner{
+		margin-top: 20px;
+	}
+   #banner img{
+	   width: 100%;
+	   height: 100%;
+   }
+   /*.box1{*/
+	   /*top:340px;*/
+	   /*left: -5%;*/
+   /*}*/
+	/*.box2{*/
+		/*top:340px;*/
+		/*left: 17%;*/
+	/*}*/
+	/*.box3{*/
+		/*top:340px;*/
+		/*left: 39%;*/
+	/*}*/
+	/*.box4{*/
+		/*top:340px;*/
+		/*left: 61%;*/
+	/*}*/
+	/*.box5{*/
+		/*top:340px;*/
+		/*left: 83%;*/
+	/*}*/
+/*==================
+  *  登录页面样式
+ ===================*/
+ .login-container{
+ 	width:800px;
+ 	height:500px;
+ 	margin:0 auto;
+ 	position:relative;
+ }
+ .login-container .img-display{
+ 	width:340px;
+ 	font-size: 0;
+ 	position: absolute;
+ 	left:40px;
+ }
+ .login-container .img-display img{
+ 	width:120px;
+ 	margin-right:50px;
+ 	margin-bottom:20px;
+ }
+ .login-container .login {
+ 	right:40px;
+ 	font-size:2rem;
+ 	color:#fff;
+ }
+ .login-container .login div{
+ 	line-height: 50px;
+ 	height:50px;
+ 	margin-bottom: 20px;
+ 	padding-left:10px;
+ 	padding-right:10px;
+ 	-webkit-border-radius:5px;
+ 	-moz-border-radius:5px;
+ 	-o-border-radius:5px;
+ 	border-radius:5px;
+	 background: rgba(45,163,232,1);
+	 border: 1px solid rgba(45,163,232,1);;
+ }
+ .login-container .login input{
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	-o-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	width:240px;
+ 	height:50px;
+ 	padding-left:10px;
+ 	color:#000;
+ 	border:none;
+ 	vertical-align: top;
+ }
+ .login-container .login button{
+ 	width:323px;
+ 	height:50px;
+ 	line-height: 50px;
+ 	text-align: center;
+ 	letter-spacing: .3rem;
+ 	font-size: 2.5rem;
+ 	display: block;
+ 	margin:20px auto;
+ 	border:none;
+ 	color:#fff;
+ 	background:rgba(45,163,232,1);
+ 	-webkit-border-radius: 20px;
+ 	-moz-border-radius: 20px;
+ 	-o-border-radius: 20px;
+ 	border-radius: 5px;
+ 	-webkit-transition:background .8s;
+ 	-moz-transition:background .8s;
+ 	-o-transition:background .8s;
+ 	transition:background .8s;
+ }
+ .login-container .login button:hover{
+ 	background: rgba(45,178,232,1);
+ 	cursor:pointer;
+ }

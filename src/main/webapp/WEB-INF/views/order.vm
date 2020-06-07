@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="xw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!-- 以上代码告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>大型仪器设备预约管理系统</title>
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <script type="text/javascript" src="/static/script/jquery-3.1.1.min_1.js"></script>
+    <link rel="stylesheet" href="/static/layui/css/layui.css">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <script src="/static/layui/layui.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/script/index.js"></script>
+</head>
+<body style="background: #F0F0F4">
+<!--[if lte IE8]>
+<p class="browserupdate">您的浏览器版本太老，请到<a href="http://browsehappy.com">这里</a>更新，以获取最佳的浏览体验。</p>
+<![endif]-->
+<header>
+    <div class="logo">
+        <a href="/index"><img src="/static/images/logo.png" alt="大型仪器设备预约管理系统logo" class="logo-img vertical-center"></a>
+##        <h1 class="vertical-center">分析测试中心预约系统</h1>
+    </div>
+    <div class="logoff">
+        <a href="/index/login" id="lg"><em class="username">登录</em></a>
+        <a href="/index/login" id="logout"><img src="/static/images/out.png" alt="注销登录"></a>
+    </div>
+</header><!-- header结束 -->
+<!--中间部分-->
+<div class="layui-carousel" id="banner" style="left: 21%;">
+    <div carousel-item>
+        <div>
+            <img src="/static/images/banner1.png" alt="">
+        </div>
+        <div>
+            <img src="/static/images/sy2.jpg" alt="">
+        </div>
+        <div>
+            <img src="/static/images/banner1.png" alt="">
+        </div>
+        <div>
+            <img src="/static/images/sy2.jpg" alt="">
+        </div>
+        <div>
+            <img src="/static/images/banner1.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-top: 40px;">
+    <div class="row">
+        <table style="position:relative;border-radius: 8px;border:1px solid #ccc;width: 93.8%;height: 30px;margin-left: 2.7%;">
+            <tr>
+                <td colspan="4" style="height: 80px;width: 100%;text-align: center;font-size: 22px;border-right: 1px solid #ccc;">大型仪器设备预约单</td>
+            </tr>
+            <tr>
+                <td style="height: 30px;width: 20%;text-align: center;border: 1px solid #ccc">课题/项目名称</td>
+                <td colspan="4" style="height: 40px;width: 80%;text-align: center;border: 1px solid #cccccc">
+                    <input type="text" id="pro_name" placeholder="必填" style="padding: 0;height: 30px;width:100%;border: none;background: #F0F0F4;text-align: center" required>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 40px;width: 25%;text-align: center;border: 1px solid #ccc">任务来源</td>
+                <td style="height: 40px;width: 25%;text-align: center;border: 1px solid #ccc">
+                    <input type="text" id="pro_source" placeholder="必填 /国家级/省部/市厅/校级/其他" style="padding: 0;height: 30px;width:100%;border: none;background: #F0F0F4;text-align: center" required>
+                </td>
+                <td style="height: 40px;width: 25%;text-align: center;border: 1px solid #ccc">项目基金号/合同号</td>
+                <td style="height: 40px;width: 25%;text-align: center;border: 1px solid #ccc">
+                    <input type="text"  id="pro_number" placeholder="必填" style="padding: 0;height: 30px;width:100%;border: none;background: #F0F0F4;text-align: center" required>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">项目负责人及单位</td>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">
+                    <input type="text" id="pro_person" placeholder="必填" style="padding: 0;height: 30px;width:100%;border: none;background: #F0F0F4;text-align: center" required>
+                </td>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">联系电话</td>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">
+                    <input type="text" id="pro_person_mobile" placeholder="必填" style="padding: 0;height: 30px;width:100%;border: none;background: #F0F0F4;text-align: center" required>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">预约人</td>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">
+                    <input type="text" id="booking_person" placeholder="必填" style="padding: 0;height: 30px;width:100%;border: none;background: #F0F0F4;text-align: center" required>
+                </td>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">联系电话</td>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">
+                    <input type="text" id="booking_person_mobile" placeholder="必填" style="padding: 0;height: 30px;width:100%;border: none;background: #F0F0F4;text-align: center" required>
+                </td>
+            </tr>
+            <tr>
+                <td style="height:5px;width: 20%;text-align: center;border: 1px solid #ccc">预约仪器</td>
+                <td colspan="3" style="height: 5px;width: 150px;text-align: center;border: 1px solid #ccc">
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <select name="interest" lay-filter="aihao" id="ins_name">
+                                    <option value="" selected=""></option>
+                                    <option value="0">显微共焦拉曼光谱仪</option>
+                                    <option value="1" >热场发射扫描电子显微镜</option>
+                                    <option value="2">电子探针显微分析仪</option>
+                                    <option value="3">多功能X射线衍射仪</option>
+                                    <option value="4">紫外-可见-近红外分光光度计</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td style="height:40px;width: 20%;text-align: center;border: 1px solid #ccc">样品信息及数量</td>
+                <td colspan="3" style="height: 40px;width: 150px;text-align: center;border: 1px solid #ccc">
+                    <input type="text" id="sample" placeholder="必填" style="padding: 0;height: 30px;width:100%;border: none;background: #F0F0F4;text-align: center" required>
+                </td>
+            </tr>
+            <tr>
+                <td style="height:40px;width: 20%;text-align: center;border: 1px solid #ccc">预约其他事项</td>
+                <td colspan="3" style="height: 40px;width: 150px;text-align: center;border: 1px solid #ccc">
+                    <input type="text" id="booking_event"  placeholder="选填"  style="padding: 0;height: 30px;width:100%;border: none;background: #F0F0F4;text-align: center">
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">送样检测人</td>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">
+                    <input type="text" id="booking_person_number" placeholder="必填" style="padding: 0;height: 30px;width:100%;border: none;background: #F0F0F4;text-align: center" required>
+                </td>
+                <td style="height: 40px;width: 10%;text-align: center;border: 1px solid #ccc" >是否具备独立上机操作技能</td>
+                <td style="height: 40px;width: 10%;text-align: center;border: 1px solid #ccc">
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <select name="interest" lay-filter="aihao" id="booking_operation_skill">
+                                    <option value="" selected=""></option>
+                                    <option value="0">是</option>
+                                    <option value="1" >否</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">与仪器专管员约定测试日期</td>
+                <td style="height: 40px;width: 30%;text-align: center;border: 1px solid #ccc">
+                    <div class="layui-form">
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label" style="width: 88px;">开始时间</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" id="booking_start_time" placeholder="yyyy-MM-dd HH:mm:ss">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form">
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label" style="width: 88px;">结束时间</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" id="booking_stop_time" placeholder="yyyy-MM-dd HH:mm:ss">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td rowspan="2" style="height: 40px;width: 10%;text-align: center;border: 1px solid #ccc">仪器专管员（签名）</td>
+                <td rowspan="2"style="height: 40px;width: 10%;text-align: center;border: 1px solid #ccc">
+                    <input type="text" disabled="disabled" style="padding: 0;height: 30px;width:100%;border: none;background: #F0F0F4;text-align: center">
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">收费标准</td>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">预览</td>
+            </tr>
+            <tr>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">费用出处</td>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">
+                    <input type="text" placeholder="必填" id="fee_source" style="padding: 0;height: 30px;width:100%;border: none;background: #F0F0F4;text-align: center">
+                </td>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">项目负责人（签名）</td>
+                <td style="height: 40px;width: 20%;text-align: center;border: 1px solid #ccc">
+                    <input type="text"   style="padding: 0;height: 30px;width:100%;border: none;background: #F0F0F4;text-align: center">
+                </td>
+            </tr>
+            <tr>
+                <td style="height:60px;width: 20%;text-align: center;border: 1px solid #ccc">中心意见</td>
+                <td colspan="3" style="height: 60px;width: 150px;text-align: center;border: 1px solid #ccc">（签名）</td>
+            </tr>
+        </table>
+        <a href="/index"><button type="button" id="btn">返回首页</button></a>
+        <a href="#"><button type="button" id="butt" style="float: right;margin-right: 3%;">提交</button></a>
+    </div>
+</div><!--中间部分结束-->
+<!--底部-->
+<div class="container-fluid" style="border-top: 1px solid #00B7EE;">
+    <div class="row" style="text-align: center;">
+        <p style="height: 20px;padding-top: 45px;margin-bottom:70px;">@</p>
+    </div>
+</div>
+<!--底部结束-->
+<script>
+    layui.use('carousel', function(){
+        //轮播
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#banner'
+            ,width: '57.6%' //设置容器宽度
+            ,height: '330px'
+            ,arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+    //下拉框
+    layui.use(['form', 'layedit', 'laydate'], function(){});
+    //日期时间
+    layui.use('laydate', function(){
+        var laydate = layui.laydate;
+        //日期时间选择器
+        laydate.render({
+            elem: '#booking_start_time'
+            ,type: 'datetime'
+        });
+        laydate.render({
+            elem: '#booking_stop_time'
+            ,type: 'datetime'
+        });
+    });
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="ins_System">
+    <output-path>$PROJECT_DIR$/classes/artifacts/ins_System</output-path>
+    <root id="archive" name="ins-booking_war.war">
+      <element id="artifact" artifact-name="ins-booking:war exploded" />
+      <element id="dir-copy" path="$PROJECT_DIR$" />
+    </root>
+  </artifact>
+</component>
